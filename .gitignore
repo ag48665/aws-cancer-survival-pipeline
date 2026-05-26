@@ -1,0 +1,13 @@
+data/
+*.rds
+*.tar.gz
+GDCdata/
+data/
+df.rds results.rds
+*.tar.gz
+GDCdata/
+data/
+GDCdata/
+df.rds results.rds
+*.tar.gz
+gdc-client_2.3_Windows_x64.zip gdc-client_2.3_Windows_x64-py3.8-windows-2019.zip

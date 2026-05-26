@@ -1,35 +1,41 @@
-# TCGA data download script
+# TCGA LUAD data download script
 
-if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
+if (!requireNamespace("BiocManager", quietly = TRUE)) {
+  install.packages("BiocManager")
+}
 
-# Install packages if missing
 packages <- c("TCGAbiolinks", "SummarizedExperiment")
 
 for (pkg in packages) {
-    if (!requireNamespace(pkg, quietly = TRUE)) {
-        BiocManager::install(pkg)
-    }
+  if (!requireNamespace(pkg, quietly = TRUE)) {
+    BiocManager::install(pkg)
+  }
 }
 
 library(TCGAbiolinks)
 library(SummarizedExperiment)
 
-# Create query
+dir.create("data/processed", recursive = TRUE, showWarnings = FALSE)
+
 query <- GDCquery(
-    project = "TCGA-LUAD",
-    data.category = "Transcriptome Profiling",
-    data.type = "Gene Expression Quantification",
-    workflow.type = "HTSeq - Counts"
+  project = "TCGA-LUAD",
+  data.category = "Transcriptome Profiling",
+  data.type = "Gene Expression Quantification",
+  workflow.type = "STAR - Counts"
 )
 
-# Download data
-GDCdownload(query)
+GDCdownload(
+  query,
+  method = "api",
+  files.per.chunk = 5,
+  directory = "data/raw"
+)
 
-# Prepare expression matrix
-data <- GDCprepare(query)
+data <- GDCprepare(
+  query,
+  directory = "data/raw"
+)
 
-# Save object
 saveRDS(data, file = "data/processed/tcga_luad_expression.rds")
 
-cat("TCGA LUAD data downloaded successfully!\n")
+cat("TCGA LUAD data downloaded and prepared successfully!\n")

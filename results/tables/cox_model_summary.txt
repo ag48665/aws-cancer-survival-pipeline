@@ -1,0 +1,19 @@
+Call:
+coxph(formula = Surv(survival_time, event) ~ age_at_index + gender, 
+    data = survival_df)
+
+  n= 578, number of events= 211 
+
+                 coef exp(coef) se(coef)     z Pr(>|z|)
+age_at_index 0.005044  1.005057 0.007125 0.708    0.479
+gendermale   0.176708  1.193282 0.137932 1.281    0.200
+
+             exp(coef) exp(-coef) lower .95 upper .95
+age_at_index     1.005      0.995    0.9911     1.019
+gendermale       1.193      0.838    0.9106     1.564
+
+Concordance= 0.545  (se = 0.023 )
+Likelihood ratio test= 2.18  on 2 df,   p=0.3
+Wald test            = 2.18  on 2 df,   p=0.3
+Score (logrank) test = 2.18  on 2 df,   p=0.3
+

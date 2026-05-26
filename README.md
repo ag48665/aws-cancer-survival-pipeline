@@ -108,3 +108,41 @@ results/       Figures and tables
 
 docs/          Documentation
 
+
+## Current Results
+
+### Survival Analysis
+
+Kaplan-Meier survival analysis was performed using TCGA-LUAD clinical metadata.
+
+![Kaplan-Meier Survival Plot](results/figures/kaplan_meier_plot.png)
+
+### Cox Regression
+
+A multivariate Cox proportional hazards model was fitted using age and gender.
+
+![Cox Hazard Ratios](results/figures/cox_hazard_ratios.png)
+
+### Differential Expression Analysis
+
+Differential expression analysis was performed using DESeq2 comparing tumor and normal samples.
+
+![Volcano Plot](results/figures/volcano_plot.png)
+
+### PCA
+
+Principal component analysis was performed on variance-stabilized RNA-seq count data.
+
+![PCA Plot](results/figures/pca_plot.png)
+
+### Heatmap
+
+Top differentially expressed genes were visualized using a scaled expression heatmap.
+
+![Top Genes Heatmap](results/figures/top_genes_heatmap.png)
+
+### LASSO Cox Model
+
+LASSO Cox regression was used for survival-associated gene feature selection.
+
+![LASSO Cox Cross-Validation](results/figures/lasso_cox_cv.png)
