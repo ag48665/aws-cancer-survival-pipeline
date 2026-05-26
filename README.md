@@ -20,24 +20,29 @@ This project demonstrates an end-to-end reproducible workflow for cancer bioinfo
 - reproducible pipeline structure with Docker, Nextflow, and GitHub Actions
 
 ---
+---
 
-Tech Stack
-R
-Bioconductor
-DESeq2
-TCGAbiolinks
-survival
-survminer
-glmnet
-ggplot2
-pheatmap
-Nextflow
-Docker
-GitHub Actions
-AWS-ready project structure
+## Tech Stack
+
+- R
+- Bioconductor
+- DESeq2
+- TCGAbiolinks
+- survival
+- survminer
+- glmnet
+- ggplot2
+- pheatmap
+- Nextflow
+- Docker
+- GitHub Actions
+- AWS-ready project structure
+
+---
+
+## Repository Structure
 
 ```text
-
 analysis/      Statistical reports
 scripts/       Reusable R analysis scripts
 nextflow/      Workflow pipeline skeleton
@@ -46,6 +51,7 @@ terraform/     Cloud infrastructure placeholder
 dashboard/     Future Shiny dashboard
 results/       Figures and result tables
 docs/          Documentation and diagrams
+```
 
 ---
 
@@ -72,6 +78,6 @@ Statistical Analysis
       |
       v
 Figures, Tables, and Reproducible Reports
+```
 
-```text
-
+---
