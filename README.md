@@ -54,14 +54,6 @@ PCA was performed on variance-stabilized RNA-seq count data.
 
 ---
 
-### Top Gene Heatmap
-
-The top differentially expressed genes were visualized using scaled expression values.
-
-![Top Genes Heatmap](https://raw.githubusercontent.com/ag48665/aws-cancer-survival-pipeline/main/results/figures/top_genes_heatmap.png)
-
----
-
 ### LASSO Cox Model
 
 LASSO Cox regression was used for survival-associated gene feature selection.
