@@ -20,7 +20,6 @@ This project demonstrates an end-to-end reproducible workflow for cancer bioinfo
 - reproducible pipeline structure with Docker, Nextflow, and GitHub Actions
   
 ---
----
 
 ## Tech Stack
 
