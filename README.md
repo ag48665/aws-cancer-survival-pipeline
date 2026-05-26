@@ -18,7 +18,55 @@ This project demonstrates an end-to-end reproducible workflow for cancer bioinfo
 - Cox proportional hazards modeling
 - LASSO Cox feature selection
 - reproducible pipeline structure with Docker, Nextflow, and GitHub Actions
-  
+
+---
+## Current Results
+
+### Kaplan-Meier Survival Analysis
+
+Survival curves were generated using TCGA-LUAD clinical metadata.
+
+![Kaplan-Meier Survival Plot](https://raw.githubusercontent.com/ag48665/aws-cancer-survival-pipeline/main/results/figures/kaplan_meier_plot.png)
+
+---
+
+### Cox Regression
+
+A Cox proportional hazards model was fitted using clinical covariates.
+
+![Cox Hazard Ratios](https://raw.githubusercontent.com/ag48665/aws-cancer-survival-pipeline/main/results/figures/cox_hazard_ratios.png)
+
+---
+
+### Differential Expression Analysis
+
+Differential expression analysis was performed using DESeq2 to compare tumor and normal RNA-seq samples.
+
+![Volcano Plot](https://raw.githubusercontent.com/ag48665/aws-cancer-survival-pipeline/main/results/figures/volcano_plot.png)
+
+---
+
+### Principal Component Analysis
+
+PCA was performed on variance-stabilized RNA-seq count data.
+
+![PCA Plot](https://raw.githubusercontent.com/ag48665/aws-cancer-survival-pipeline/main/results/figures/pca_plot.png)
+
+---
+
+### Top Gene Heatmap
+
+The top differentially expressed genes were visualized using scaled expression values.
+
+![Top Genes Heatmap](https://raw.githubusercontent.com/ag48665/aws-cancer-survival-pipeline/main/results/figures/top_genes_heatmap.png)
+
+---
+
+### LASSO Cox Model
+
+LASSO Cox regression was used for survival-associated gene feature selection.
+
+![LASSO Cox Cross-Validation](https://raw.githubusercontent.com/ag48665/aws-cancer-survival-pipeline/main/results/figures/lasso_cox_cv.png)
 ---
 
 ## Tech Stack
