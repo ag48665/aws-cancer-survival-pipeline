@@ -43,8 +43,9 @@ Statistical Analysis
       v
 Figures, Tables, and Reproducible Reports
 
+```text
 
----
+
 Tech Stack
 R
 Bioconductor
@@ -60,7 +61,8 @@ Docker
 GitHub Actions
 AWS-ready project structure
 
-----
+```text
+
 analysis/      Statistical reports
 scripts/       Reusable R analysis scripts
 nextflow/      Workflow pipeline skeleton
