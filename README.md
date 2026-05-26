@@ -1,3 +1,10 @@
+![R](https://img.shields.io/badge/R-Statistical%20Computing-blue)
+![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
+![Nextflow](https://img.shields.io/badge/Nextflow-Pipeline-green)
+![AWS](https://img.shields.io/badge/AWS-Cloud-orange)
+
+
+
 \# AWS Cancer Survival Pipeline
 
 
