@@ -19,32 +19,7 @@ This project demonstrates an end-to-end reproducible workflow for cancer bioinfo
 - LASSO Cox feature selection
 - reproducible pipeline structure with Docker, Nextflow, and GitHub Actions
 
-## Pipeline Architecture
-
-```text
-TCGA-LUAD Data
-      |
-      v
-Data Download & Preprocessing
-      |
-      v
-RNA-seq Count Matrix + Clinical Metadata
-      |
-      v
-Statistical Analysis
-      |
-      +--> Differential Expression Analysis
-      +--> PCA
-      +--> Heatmap
-      +--> Kaplan-Meier Survival Analysis
-      +--> Cox Regression
-      +--> LASSO Cox Feature Selection
-      |
-      v
-Figures, Tables, and Reproducible Reports
-
-```text
-
+---
 
 Tech Stack
 R
@@ -73,3 +48,30 @@ results/       Figures and result tables
 docs/          Documentation and diagrams
 
 ---
+
+## Pipeline Architecture
+
+```text
+TCGA-LUAD Data
+      |
+      v
+Data Download & Preprocessing
+      |
+      v
+RNA-seq Count Matrix + Clinical Metadata
+      |
+      v
+Statistical Analysis
+      |
+      +--> Differential Expression Analysis
+      +--> PCA
+      +--> Heatmap
+      +--> Kaplan-Meier Survival Analysis
+      +--> Cox Regression
+      +--> LASSO Cox Feature Selection
+      |
+      v
+Figures, Tables, and Reproducible Reports
+
+```text
+
